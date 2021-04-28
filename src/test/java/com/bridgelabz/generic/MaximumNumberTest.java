@@ -12,10 +12,10 @@ public class MaximumNumberTest {
         maximumNumber = new MaximumNumber();
     }
 
-    //@testMaximumIntegerNumber check for second position number
+    //@testMaximumIntegerNumber check for third position number
     @Test
     void testMaximumIntegerNumber() {
-        int result = maximumNumber.maximumIntegerNumber(4,8,7);
+        int result = maximumNumber.maximumIntegerNumber(4,5,8);
         Assert.assertEquals(8,result);
     }
 }
