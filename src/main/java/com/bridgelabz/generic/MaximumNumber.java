@@ -13,8 +13,8 @@ public class MaximumNumber {
         return maximum;
     }
 
-    //@Method maximumIntegerNumber check maximum integer from given integer numbers
-    public float maximumFloatNumber(Float first_number,Float second_number, Float third_number){
+    //@Method maximumFloatNumber check maximum float from given integer numbers
+    public float maximumFloatNumber(Float first_number,Float second_number, Float third_number) {
         float maximum = first_number;
         if (second_number.compareTo(maximum) > 0)
             maximum = second_number;

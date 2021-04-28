@@ -20,7 +20,7 @@ public class MaximumNumberTest {
         Assert.assertEquals(8,result);
     }
 
-    //@testMaximumFloatNumber check for first position  maximum number
+    //@testMaximumFloatNumber check for second position  maximum number
     @Test
     void testMaximumFloatNumber() {
         float result = maximumNumber.maximumFloatNumber(5.4f,6.67f,2.4f);
