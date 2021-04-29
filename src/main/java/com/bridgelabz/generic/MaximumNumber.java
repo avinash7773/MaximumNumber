@@ -22,4 +22,15 @@ public class MaximumNumber <T extends Comparable > {
         System.out.println("Maximum value=" + maximum);
         return maximum;
     }
+
+    //@maximum check maximum with more than three parameter
+    public  <T extends Comparable> T maximum(T ... elements) {
+        Arrays.sort(elements);
+        T max = (T) elements[0];
+        for (T element : elements){
+            if(element.compareTo(max) > 0)
+                max = element;
+        }
+        return max;
+    }
 }
