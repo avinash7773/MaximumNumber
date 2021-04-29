@@ -10,13 +10,13 @@ public class MaximumNumberTest {
 
     @BeforeEach
     void setUp() {
-        maximumNumber = new MaximumNumber();
+        maximumNumber = new MaximumNumber(10,20,30);
     }
 
     //@testMaximum check for the maximum by using generic
     @Test
     void testMaximum() {
-        String result = maximumNumber.maximum("apple","peach","banana");
-        Assert.assertEquals("peach",result);
+        int result = (Integer) maximumNumber.maximum();
+        Assert.assertEquals(30,result);
     }
 }
