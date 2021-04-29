@@ -13,24 +13,10 @@ public class MaximumNumberTest {
         maximumNumber = new MaximumNumber();
     }
 
-    //@testMaximumIntegerNumber check for third position maximum number
+    //@testMaximum check for the maximum by using generic
     @Test
-    void testMaximumIntegerNumber() {
-        int result = maximumNumber.maximumIntegerNumber(4,5,8);
-        Assert.assertEquals(8,result);
-    }
-
-    //@testMaximumFloatNumber check for third position float number is maximum number
-    @Test
-    void testMaximumFloatNumber() {
-        float result = maximumNumber.maximumFloatNumber(5.4f,6.67f,7.4f);
-        Assertions.assertEquals(7.4f,result);
-    }
-
-    //git@testMaximumString check for Third position string
-    @Test
-    void testMaximumString() {
-        String result = maximumNumber.maximumString("apple","banana","peach");
-        Assertions.assertEquals("peach",result);
+    void testMaximum() {
+        String result = maximumNumber.maximum("apple","peach","banana");
+        Assert.assertEquals("peach",result);
     }
 }
