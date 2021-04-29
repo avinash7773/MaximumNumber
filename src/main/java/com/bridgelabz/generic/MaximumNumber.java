@@ -24,14 +24,14 @@ public class MaximumNumber {
         return maximum;
     }
 
-    //@Method maximumString check maximum String from given Strings
+    //@Method maximumString check maximum String from given String
     public static String maximumString(String first_string,String second_string, String third_string) {
         String maximum = first_string;
         if (second_string.compareTo(maximum) > 0)
             maximum = second_string;
         if (third_string.compareTo(maximum) > 0)
             maximum = third_string;
-        System.out.println("Maximum String=" + maximum);
+        System.out.println("Maximum String =" + maximum);
         return maximum;
     }
 }
