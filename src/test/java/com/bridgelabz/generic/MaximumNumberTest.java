@@ -26,4 +26,11 @@ public class MaximumNumberTest {
         float result = maximumNumber.maximumFloatNumber(5.4f,6.67f,7.4f);
         Assertions.assertEquals(7.4f,result);
     }
+
+    //@testMaximumString check for first position string
+    @Test
+    void testMaximumString() {
+        String result = maximumNumber.maximumString("peach","apple","banana");
+        Assertions.assertEquals("peach",result);
+    }
 }
