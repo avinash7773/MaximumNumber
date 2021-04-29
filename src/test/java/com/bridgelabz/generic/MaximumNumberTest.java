@@ -27,10 +27,10 @@ public class MaximumNumberTest {
         Assertions.assertEquals(7.4f,result);
     }
 
-    //@testMaximumString check for Second position string
+    //git@testMaximumString check for Third position string
     @Test
     void testMaximumString() {
-        String result = maximumNumber.maximumString("apple","peach","banana");
+        String result = maximumNumber.maximumString("apple","banana","peach");
         Assertions.assertEquals("peach",result);
     }
 }
